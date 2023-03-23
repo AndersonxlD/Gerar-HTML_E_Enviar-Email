@@ -19,7 +19,7 @@ class Gerar:
     def __init__(self):
         self.desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
         self.titulo = '# Report Diario'
-        self.df = pd.read_excel(self.desktop_path+"\\airlines_delay.xlsx")
+        self.df = pd.read_excel(self.desktop_path+"\\projetonew\\airlines_delay.xlsx")
 
     def CriarGRafico(self):
         fig3 = px.scatter(self.df,x='Airline',y='Length',size='Length',color='DayOfWeek')
@@ -48,7 +48,7 @@ class Gerar:
     
     def Salvar(self):
         app = self.CriarApp()
-        app.save(self.desktop_path+"\\Teste_Diario.html")
+        app.save(self.desktop_path+"\\projetonew\\Teste_Diario.html")
 
 gerar = Gerar()
 gerar.Salvar()
