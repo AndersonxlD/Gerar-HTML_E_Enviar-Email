@@ -48,7 +48,7 @@ class Gerar:
     
     def Salvar(self):
         app = self.CriarApp()
-        app.save(self.desktop_path+"\\projetonew\\Teste_Diario.html")
+        app.save(self.desktop_path+"\\projetonew\\HTML_Gerado.html")
 
 gerar = Gerar()
 gerar.Salvar()
