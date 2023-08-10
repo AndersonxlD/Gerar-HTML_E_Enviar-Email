@@ -15,7 +15,9 @@ import matplotlib.pyplot as plt
 
 warnings.filterwarnings('ignore')
 
-class Gerar:
+from Enviar_Email import Teste
+
+class Gerar(Teste):
     def __init__(self):
         self.desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
         self.titulo = '# Report Diario'
@@ -52,3 +54,4 @@ class Gerar:
 
 gerar = Gerar()
 gerar.Salvar()
+gerar.ObjetoMime()

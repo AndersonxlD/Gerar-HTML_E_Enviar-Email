@@ -10,7 +10,7 @@ class Teste:
     def __init__(self):
         self.email_lista = ['aaandersonpereira45265@gmail.com', 'aristocles.platao123@gmail.com', 'guh.roch4@gmail.com']
         self.desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
-        self.caminho = self.desktop_path + "\\projetonew\\Teste_Diario.html"
+        self.caminho = self.desktop_path + "\\projetonew\\HTML_Gerado.html"
         self.arquivo = self.caminho
         self.de = 'aandersonpereira45265@gmail.com'
         self.senha = 'wwfloewvotoxzpwa'
